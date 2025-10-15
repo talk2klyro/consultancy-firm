@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consultancy Firm — Skills, Strategy, Scale</title>
+  <meta name="description" content="Consultancy Firm — training, consulting and ebooks that help African professionals scale faster." />
+  <meta property="og:title" content="Consultancy Firm — Skills, Strategy, Scale" />
+  <meta property="og:description" content="Training, consulting and ebooks that help African professionals scale faster." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts (system-friendly fallback) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===========================
+       Consultancy Firm — style.css
+       Single-file, responsive, premium palette
+       Midnight blue (#081224) + Gold accent (#D4AF37) + Soft neutrals
+    ============================ */
+    :root{
+      --bg:#081224;
+      --card:#0f1a2b;
+      --muted:#9aa7b8;
+      --gold:#D4AF37;
+      --white:#ffffff;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --max-width:1100px;
+      --accent:var(--gold);
+      --shadow: 0 8px 30px rgba(3,9,20,0.6);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #061026 0%, #07102a 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:14px;align-items:center;text-decoration:none;color:var(--white)}
+    .brand .logo{
+      width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#f2d97f);display:flex;align-items:center;justify-content:center;color:#081224;font-weight:800;font-family:Playfair Display,serif;font-size:18px;box-shadow:var(--shadow)
+    }
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    nav a.cta{
+      background:var(--accent);color:#081224;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700
+    }
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;padding:40px 0}
+    .hero .headline{font-family:Playfair Display, serif;font-size:34px;line-height:1.05;color:var(--white);margin:0 0 12px}
+    .hero p.lead{color:var(--muted);margin:0 0 20px}
+    .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;border:2px solid rgba(255,255,255,0.06);color:var(--white)}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .feature{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);min-height:120px}
+    .feature h4{margin:0 0 8px}
+
+    /* Sections */
+    section{margin:44px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px}
+    .testimonial{min-width:280px;background:var(--glass);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .testimonial p{color:var(--muted);margin:0 0 8px}
+    .testimonial .who{font-weight:700;color:var(--white);font-size:14px}
+
+    footer{padding:28px 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:28px;color:var(--muted)}
+    .footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}
+
+    /* responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr; text-align:left}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+      .features{grid-template-columns:repeat(1,1fr)}
+    }
+    @media (max-width:640px){
+      nav{display:none}
+      header{padding:12px 0}
+      .headline{font-size:28px}
+      .brand .logo{width:40px;height:40px;font-size:16px}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="./index.html" class="brand" aria-label="Consultancy Firm home">
+        <div class="logo">CF</div>
+        <div>
+          <div style="font-weight:800">Consultancy Firm</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Skills • Strategy • Scale</div>
+        </div>
+      </a>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="./services.html">Services</a>
+        <a href="./ebooks.html">Ebooks</a>
+        <a href="./tutors.html">Consultants</a>
+        <a href="./classes.html">Classes</a>
+        <a href="./enroll.html" class="cta">Join / Enroll</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <h1 id="hero-heading" class="headline">Empowering African professionals to grow faster — one skill, one strategy at a time.</h1>
+          <p class="lead">Consultancy Firm builds tailored trainings, trusted consultant matches, and actionable ebooks that help startups and professionals scale sustainably.</p>
+
+          <div class="actions">
+            <a href="./ebooks.html" class="btn" style="background:var(--accent);color:#081224;border-radius:12px">Explore Ebooks</a>
+            <a href="./services.html" class="btn secondary">View Services</a>
+            <a href="https://wa.me/2348012345678" class="btn secondary" style="display:flex;align-items:center;gap:8px">
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="features" aria-hidden="false" style="margin-top:22px">
+            <div class="feature card">
+              <h4>Consulting</h4>
+              <div style="color:var(--muted)">Strategy sessions to structure your business growth plan.</div>
+            </div>
+            <div class="feature card">
+              <h4>Training</h4>
+              <div style="color:var(--muted)">Live classes & workshops to upskill your team.</div>
+            </div>
+            <div class="feature card">
+              <h4>Digital Products</h4>
+              <div style="color:var(--muted)">Ebooks, playbooks and templates you can implement today.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card" aria-label="Quick stats and featured ebook">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:72px;height:72px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#ffd88b);display:flex;align-items:center;justify-content:center;color:#081224;font-weight:800;font-family:Playfair Display">CF</div>
+            <div>
+              <div style="font-weight:800">Consultancy Firm</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Trusted by professionals across Africa</div>
+            </div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.04)">
+
+          <div style="margin-bottom:10px">
+            <strong>Featured ebook</strong>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">The Growth Playbook — a practical guide for scaling skills & systems.</div>
+          </div>
+
+          <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+            <a href="./ebooks.html" class="btn" style="padding:10px 12px;background:var(--accent);color:#081224;border-radius:10px">Get the ebook</a>
+            <a href="./enroll.html" class="btn secondary" style="padding:8px 10px">Book a consult</a>
+          </div>
+
+          <div style="margin-top:18px;font-size:13px;color:var(--muted)">
+            <div><strong>Students helped</strong> — 1,200+</div>
+            <div style="margin-top:6px"><strong>Average rating</strong> — 4.8/5</div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Featured Services -->
+      <section aria-labelledby="services-heading">
+        <div class="section-head">
+          <h3 id="services-heading">Featured Services</h3>
+          <a href="./services.html" style="color:var(--muted);text-decoration:none;font-weight:600">See all services →</a>
+        </div>
+
+        <div class="grid-3" id="services-grid" style="margin-top:18px">
+          <!-- services rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Featured Tutors -->
+      <section aria-labelledby="tutors-heading">
+        <div class="section-head">
+          <h3 id="tutors-heading">Top Consultants</h3>
+          <a href="./tutors.html" style="color:var(--muted);text-decoration:none;font-weight:600">View all consultants →</a>
+        </div>
+
+        <div class="grid-4" id="tutors-grid" style="margin-top:18px">
+          <!-- tutors rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section aria-labelledby="testimonials-heading">
+        <div class="section-head">
+          <h3 id="testimonials-heading">What clients say</h3>
+          <div style="color:var(--muted);font-size:13px">Real feedback from our community</div>
+        </div>
+
+        <div class="testimonials" id="testimonials-row" style="margin-top:16px">
+          <!-- testimonials rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Quick CTA -->
+      <section class="card" style="display:flex;justify-content:space-between;align-items:center;padding:18px">
+        <div>
+          <h3 style="margin:0 0 6px">Ready to scale?</h3>
+          <div style="color:var(--muted)">Sign up for a free strategy call or grab a practical ebook to get started.</div>
+        </div>
+        <div style="display:flex;gap:10px">
+          <a class="btn" href="./enroll.html" style="background:var(--accent);color:#081224">Book free call</a>
+          <a class="btn secondary" href="./ebooks.html">Browse ebooks</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div style="font-weight:700">Consultancy Firm</div>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">info@consultancyfirm.africa • +234 801 234 5678</div>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="./contact.html" style="color:var(--muted);text-decoration:none">Contact</a>
+          <a href="./privacy.html" style="color:var(--muted);text-decoration:none">Privacy</a>
+          <div style="color:var(--muted);font-size:13px">© Consultancy Firm — <span id="year"></span></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ======================
+       Embedded JSON data (static site friendly)
+       These can later be split into data/*.json files if you move to a build pipeline.
+       ====================== -->
+  <script id="settings-json" type="application/json">
+  {
+    "siteName":"Consultancy Firm",
+    "email":"info@consultancyfirm.africa",
+    "whatsapp":"https://wa.me/2348012345678"
+  }
+  </script>
+
+  <script id="services-json" type="application/json">
+  [
+    {"id":"svc-1","title":"Business Strategy & OKRs","tag":"1:1 strategy sessions, frameworks & roadmaps","cta":"Book consultation"},
+    {"id":"svc-2","title":"Brand & Positioning","tag":"Messaging, personal brand, go-to-market playbooks","cta":"View service"},
+    {"id":"svc-3","title":"Online Course Production","tag":"From curriculum to launch — done-for-you","cta":"Get started"}
+  ]
+  </script>
+
+  <script id="tutors-json" type="application/json">
+  [
+    {"id":"t-1","name":"Ade Chukwu","role":"Business Strategist","bio":"10+ years helping startups and consultants scale across Africa.","image":"assets/images/tutor-sample1.jpg","rating":4.9},
+    {"id":"t-2","name":"Sade Okonkwo","role":"Growth Marketer","bio":"Performance marketing + funnel optimization specialist.","image":"assets/images/tutor-sample2.jpg","rating":4.8},
+    {"id":"t-3","name":"Emeka N.","role":"Product Advisor","bio":"Product-market fit and roadmap coaching for SMEs.","image":"assets/images/tutor-sample3.jpg","rating":4.7},
+    {"id":"t-4","name":"Nneka O.","role":"Finance Coach","bio":"Financial modelling & pricing strategies for founders.","image":"assets/images/tutor-sample4.jpg","rating":4.9}
+  ]
+  </script>
+
+  <script id="ebooks-json" type="application/json">
+  [
+    {"id":"ebook-1","title":"The Growth Playbook","author":"Consultancy Firm Team","price":"₦3,500","image":"assets/images/ebook-cover1.jpg","description":"A practical guide on scaling skills, systems, and strategy."}
+  ]
+  </script>
+
+  <script id="testimonials-json" type="application/json">
+  [
+    {"id":"test-1","quote":"The Growth Playbook gave me a clear 90-day plan — our revenue grew 34% within 3 months.","who":"Chinwe, Founder"},
+    {"id":"test-2","quote":"Consultancy Firm connected me with a tutor who helped refine our pricing. Game changer.","who":"Tosin, Freelancer"},
+    {"id":"test-3","quote":"The workshops are practical, fast and directly applicable to our team.","who":"Ibrahim, Product Lead"}
+  ]
+  </script>
+
+  <!-- ======================
+       Inline JS: dynamic rendering + small helpers
+       Keep minimal and static-friendly
+       ====================== -->
+  <script>
+    (function(){
+      // Utilities
+      function $id(i){return document.getElementById(i)}
+      function parseJSON(id){try{ return JSON.parse($id(id).textContent);}catch(e){console.error("JSON parse error", e); return []}}
+
+      // Render services
+      const services = parseJSON('services-json')
+      const servicesGrid = $id('services-grid')
+      services.forEach(s => {
+        const card = document.createElement('div')
+        card.className = 'card'
+        card.innerHTML = `
+          <h4 style="margin:0 0 6px">${escapeHtml(s.title)}</h4>
+          <div style="color:var(--muted);font-size:14px">${escapeHtml(s.tag)}</div>
+          <div style="margin-top:12px"><a href="./services.html" class="btn secondary" style="padding:8px 10px">${escapeHtml(s.cta)}</a></div>
+        `
+        servicesGrid.appendChild(card)
+      })
+
+      // Render tutors
+      const tutors = parseJSON('tutors-json')
+      const tutorsGrid = $id('tutors-grid')
+      tutors.slice(0,4).forEach(t => {
+        const tcard = document.createElement('article')
+        tcard.className = 'card'
+        tcard.innerHTML = `
+          <div style="display:flex;gap:12px;align-items:center">
+            <img loading="lazy" src="${escapeAttr(t.image)}" alt="${escapeAttr(t.name)}" style="width:72px;height:72px;border-radius:10px;object-fit:cover">
+            <div>
+              <div style="font-weight:800">${escapeHtml(t.name)}</div>
+              <div style="color:var(--muted);font-size:13px">${escapeHtml(t.role)}</div>
+            </div>
+          </div>
+          <div style="margin-top:10px;color:var(--muted);font-size:13px">${escapeHtml(t.bio)}</div>
+          <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700">${escapeHtml(String(t.rating))} ★</div>
+            <div><a href="./tutors.html" class="btn secondary" style="padding:8px 10px">Book session</a></div>
+          </div>
+        `
+        tutorsGrid.appendChild(tcard)
+      })
+
+      // Render testimonials
+      const tests = parseJSON('testimonials-json')
+      const testsRow = $id('testimonials-row')
+      tests.forEach(t => {
+        const el = document.createElement('div')
+        el.className = 'testimonial'
+        el.innerHTML = `<p>“${escapeHtml(t.quote)}”</p><div class="who">${escapeHtml(t.who)}</div>`
+        testsRow.appendChild(el)
+      })
+
+      // small helpers
+      function escapeHtml(str){
+        return (str+'').replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m] })
+      }
+      function escapeAttr(s){ return escapeHtml(s).replace(/"/g,'&quot;') }
+
+      // set year
+      $id('year').textContent = new Date().getFullYear()
+
+      // keyboard accessibility: focus outlines for buttons (visual)
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Tab') document.documentElement.classList.add('user-tab')
+      })
+    })();
+  </script>
+</body>
+</html>
