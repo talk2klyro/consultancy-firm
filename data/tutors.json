@@ -2,17 +2,66 @@
   {
     "id": 101,
     "name": "Mr. A. Ade",
-    "subjects": ["Mathematics", "Further Maths"],
-    "rating": 4.8,
+    "role": "Senior Health Education Consultant",
+    "subjects": ["Health Education", "Community Facilitation"],
+    "expertise": ["Community Health Training", "Behavioral Communication", "Participatory Learning"],
+    "rating": 4.9,
+    "region": "South-West Nigeria",
+    "availability": "Mon - Thu",
     "photo": "assets/images/tutor-ade.jpg",
-    "bio": "10+ years tutoring experience, JAMB specialist."
+    "bio": "A results-driven educator with over 12 years in community health training and consultancy. Ade designs high-impact learning experiences that transform local facilitators into confident health advocates.",
+    "impactStatement": "His sessions consistently spark confidence, curiosity, and clarity among learners, helping them translate knowledge into community change."
   },
   {
     "id": 102,
     "name": "Ms. B. Chukwu",
-    "subjects": ["Physics", "Chemistry"],
-    "rating": 4.7,
+    "role": "Diagnostic Science Specialist & Training Facilitator",
+    "subjects": ["Applied Physics", "Health Technology"],
+    "expertise": ["Clinical Diagnostics", "STEM Integration", "Youth Empowerment"],
+    "rating": 4.8,
+    "region": "South-East Nigeria",
+    "availability": "Tue - Fri",
     "photo": "assets/images/tutor-chukwu.jpg",
-    "bio": "Physics teacher with hands-on experiments."
+    "bio": "A passionate instructor blending science and purpose. Chukwu’s practical teaching style connects technical principles with real-world health solutions, inspiring learners to apply science meaningfully.",
+    "impactStatement": "She bridges complex ideas with simple realities — empowering learners to think critically and act compassionately."
+  },
+  {
+    "id": 103,
+    "name": "Mrs. C. Nwoye",
+    "role": "Educational Consultant & Leadership Coach",
+    "subjects": ["Educational Leadership", "Communication"],
+    "expertise": ["Teacher Development", "Leadership Coaching", "Communication for Impact"],
+    "rating": 4.9,
+    "region": "South-South Nigeria",
+    "availability": "Weekends Only",
+    "photo": "assets/images/tutor-nwoye.jpg",
+    "bio": "With over 15 years in educational reform and leadership mentoring, Nwoye trains facilitators to lead with empathy and influence. Her leadership workshops are known for clarity, warmth, and real-world results.",
+    "impactStatement": "She inspires educators to become role models of resilience and purpose in their communities."
+  },
+  {
+    "id": 104,
+    "name": "Dr. D. Balogun",
+    "role": "Community Mobilization & Social Impact Consultant",
+    "subjects": ["Social Mobilization", "Public Health Campaigns"],
+    "expertise": ["Behavior Change Communication", "Community Systems Strengthening", "Strategic Planning"],
+    "rating": 4.8,
+    "region": "North-Central Nigeria",
+    "availability": "Mon - Fri",
+    "photo": "assets/images/tutor-balogun.jpg",
+    "bio": "Dr. Balogun has led multiple community development projects across Nigeria. He equips facilitators with participatory tools to mobilize communities, increase program ownership, and sustain change.",
+    "impactStatement": "His guidance creates empowered teams capable of transforming data into human stories and community action."
+  },
+  {
+    "id": 105,
+    "name": "Mr. K. Musa",
+    "role": "Monitoring & Evaluation Analyst",
+    "subjects": ["Data Collection", "Field Reporting"],
+    "expertise": ["M&E Systems", "Data Verification", "Impact Reporting"],
+    "rating": 4.7,
+    "region": "Northern Nigeria",
+    "availability": "Flexible",
+    "photo": "assets/images/tutor-musa.jpg",
+    "bio": "Musa is an analytical trainer passionate about simplifying complex M&E processes. His data workshops enable participants to turn raw field data into meaningful insights for better decision-making.",
+    "impactStatement": "He helps learners see data as a story — one that can inform, inspire, and drive measurable impact."
   }
 ]
