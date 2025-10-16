@@ -1,0 +1,18 @@
+[
+  {
+    "id": 101,
+    "name": "Mr. A. Ade",
+    "subjects": ["Mathematics", "Further Maths"],
+    "rating": 4.8,
+    "photo": "assets/images/tutor-ade.jpg",
+    "bio": "10+ years tutoring experience, JAMB specialist."
+  },
+  {
+    "id": 102,
+    "name": "Ms. B. Chukwu",
+    "subjects": ["Physics", "Chemistry"],
+    "rating": 4.7,
+    "photo": "assets/images/tutor-chukwu.jpg",
+    "bio": "Physics teacher with hands-on experiments."
+  }
+]
