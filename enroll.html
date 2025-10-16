@@ -1,0 +1,120 @@
+<!doctyp<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Join EduBridge Consultancy’s certified programs in Health Education, Community Mobilization, and Community Diagnosis — empowering professionals across Nigeria." />
+  <meta name="theme-color" content="#0A6E50" />
+  <title>Enroll — EduBridge Consultancy</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/enroll.js" defer></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EduBridge Consultancy</a>
+      <button class="hamburger" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Programs</a>
+        <a href="tutors.html">Consultants</a>
+        <a href="enroll.html" class="active">Enroll</a>
+        <a href="contact.html">Contact</a>
+        <button id="toggle-dark" class="btn btn-secondary" title="Toggle dark mode">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container enroll-page">
+    <section class="page-head">
+      <h1>Enroll in Our Professional Development Programs</h1>
+      <p>
+        Welcome to the enrollment gateway of <strong>EduBridge Consultancy</strong> — 
+        where passionate professionals become community change-makers.  
+        Each course below is designed to translate knowledge into measurable field impact.
+      </p>
+    </section>
+
+    <!-- PROGRAM CARDS -->
+    <section class="program-grid">
+      <article class="card">
+        <h3>Community Health Education Masterclass</h3>
+        <p>
+          Develop the ability to design and deliver impactful health education sessions in schools, clinics, and communities.  
+          Certification recognized by local health authorities.
+        </p>
+        <p class="price">₦12,000</p>
+        <div class="actions">
+          <a href="https://flutterwave.com/pay/eduhealth1" target="_blank" class="btn btn-primary">Secure Enrollment</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Community Mobilization & Engagement Strategy</h3>
+        <p>
+          Learn behavioral communication and mobilization frameworks used by top NGOs and local health campaigns across Nigeria.
+        </p>
+        <p class="price">₦15,000</p>
+        <div class="actions">
+          <a href="https://flutterwave.com/pay/edumobilize2" target="_blank" class="btn btn-primary">Join Now</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Community Diagnosis & Health Data Interpretation</h3>
+        <p>
+          Equip yourself with diagnostic tools to analyze, interpret, and respond to community health patterns effectively.
+        </p>
+        <p class="price">₦18,000</p>
+        <div class="actions">
+          <a href="https://flutterwave.com/pay/edudiagnosis3" target="_blank" class="btn btn-primary">Enroll Securely</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- NEUROMARKETING TRUST SECTION -->
+    <section class="trust-banner">
+      <h2>Why Professionals Choose EduBridge Consultancy</h2>
+      <ul>
+        <li><strong>Recognized Certification</strong> — backed by reputable community health organizations.</li>
+        <li><strong>Expert-Led Facilitation</strong> — delivered by certified consultants with real field experience.</li>
+        <li><strong>Secure Payment</strong> — powered by <em>Flutterwave Nigeria</em>.</li>
+        <li><strong>Impact-Driven Learning</strong> — every module is linked to measurable outcomes in your community.</li>
+      </ul>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <h2>Ready to Begin?</h2>
+      <p>
+        Take your next professional leap.  
+        Join a growing network of educators and mobilizers redefining community health across Nigeria.
+      </p>
+      <a href="contact.html" class="btn btn-outline">Need Assistance? Contact Support</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> EduBridge Consultancy. Empowering Insight. Advancing Impact.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('toggle-dark').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
