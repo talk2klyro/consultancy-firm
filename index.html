@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="EduBridge Consultancy — Empowering communities through health education, mobilization, and diagnosis." />
+  <meta name="theme-color" content="#0A6E50" />
+  <title>EduBridge Consultancy — Building Healthier Communities</title>
+
+  <!-- Favicon & Open Graph -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="EduBridge Consultancy — Building Healthier Communities">
+  <meta property="og:description" content="We empower institutions, tutors, and communities through health education, mobilization, and diagnosis.">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Main App (ES Module) -->
+  <script type="module" src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EduBridge Consultancy</a>
+
+      <button class="hamburger" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Programs</a>
+        <a href="tutors.html">Consultants</a>
+        <a href="enroll.html">Join / Partner</a>
+        <a href="contact.html">Contact</a>
+        <button id="toggle-dark" class="btn btn-secondary" title="Toggle dark mode">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-left">
+        <h1 id="hero-heading">We Build Healthier Communities, One Insight at a Time.</h1>
+        <p>
+          EduBridge Consultancy empowers organizations, educators, and communities with strategies that turn health education into sustainable impact — from mobilization to diagnosis and community transformation.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="classes.html">Explore Our Programs</a>
+          <a class="btn btn-secondary" href="enroll.html">Join as a Partner</a>
+        </div>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <img loading="lazy" alt="Community development illustration" src="assets/images/hero-illustration.svg">
+      </div>
+    </section>
+
+    <!-- VALUE PILLARS -->
+    <section aria-label="Our Philosophy" class="pillars">
+      <h2>Insight. Action. Transformation.</h2>
+      <p>
+        Our consultancy model combines deep community understanding with data-driven execution — guiding health educators, institutions, and mobilizers to create measurable transformation.
+      </p>
+      <div class="pillar-grid">
+        <div class="pillar">
+          <h3>Insight</h3>
+          <p>We diagnose community needs through participatory research and field data analysis.</p>
+        </div>
+        <div class="pillar">
+          <h3>Action</h3>
+          <p>We mobilize local actors, train educators, and design campaigns that change behaviors.</p>
+        </div>
+        <div class="pillar">
+          <h3>Transformation</h3>
+          <p>We track real outcomes — healthier families, informed citizens, and stronger systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section aria-label="Our Core Services" class="services">
+      <h2>What We Do Best</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Health Education</h3>
+          <p>We design and deploy health education programs — empowering communities with accurate, actionable knowledge on hygiene, nutrition, and preventive care.</p>
+        </article>
+        <article class="service-card">
+          <h3>Community Mobilization & Training</h3>
+          <p>We build capacity for health workers, volunteers, and institutions, ensuring every message delivered becomes a movement for better living.</p>
+        </article>
+        <article class="service-card">
+          <h3>Community Diagnosis</h3>
+          <p>We identify gaps and needs using data-driven assessment and on-ground research — helping leaders make informed, strategic decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- IMPACT SECTION -->
+    <section aria-label="Our Impact" class="impact">
+      <h2>Our Impact in Numbers</h2>
+      <ul class="impact-stats">
+        <li><strong>120+</strong> trained community educators</li>
+        <li><strong>15+</strong> partner institutions across Nigeria</li>
+        <li><strong>30,000+</strong> lives impacted through outreach programs</li>
+      </ul>
+
+      <blockquote>
+        “EduBridge helped us reimagine our community engagement model — their structure turned volunteers into leaders.”  
+        <cite>— Dr. Adebayo, Program Director (Lagos)</cite>
+      </blockquote>
+      <blockquote>
+        “They didn’t just train us; they helped us believe in our purpose again.”  
+        <cite>— Grace E., Community Health Worker</cite>
+      </blockquote>
+    </section>
+
+    <!-- AUDIENCE CTA FUNNEL -->
+    <section aria-label="For You" class="audience-cta">
+      <h2>We Work With You — Wherever You Fit In</h2>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <h3>For Institutions</h3>
+          <p>Partner with us to design or scale community-based health programs that deliver measurable results.</p>
+          <a href="enroll.html" class="btn btn-outline">Partner With Us</a>
+        </div>
+        <div class="audience-card">
+          <h3>For Tutors & Educators</h3>
+          <p>Join our professional network. Get certified, mentored, and visible in your community impact journey.</p>
+          <a href="tutors.html" class="btn btn-outline">Join as Consultant</a>
+        </div>
+        <div class="audience-card">
+          <h3>For Students & Parents</h3>
+          <p>Access trusted, verified health education programs guided by community experts.</p>
+          <a href="classes.html" class="btn btn-outline">View Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND PROMISE -->
+    <section aria-label="Our Promise" class="brand-promise">
+      <blockquote>
+        “We believe every person — from the city to the village — deserves access to informed health knowledge.
+        When people feel seen, respected, and capable, entire communities rise.”
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> EduBridge Consultancy. Empowering Health Systems. Enabling Human Potential.</p>
+      <p>📍 Lagos | Abuja | Port Harcourt</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('toggle-dark').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+  </html>
