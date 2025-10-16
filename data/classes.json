@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Community Health Education Masterclass",
+    "subject": "Health Education",
+    "category": "Professional Development",
+    "level": "Intermediate",
+    "tutorId": 101,
+    "tutorName": "Mr. A. Ade — Senior Health Educator",
+    "price": 7500,
+    "schedule": "Mon & Wed — 4pm - 6pm",
+    "short": "Develop practical communication and facilitation skills for effective community health programs.",
+    "impactFocus": "Empowers field workers and educators to lead impactful community sessions with confidence.",
+    "classroomUrl": "https://example.com/classroom/health-education"
+  },
+  {
+    "id": 2,
+    "title": "Applied Physics for Health Technicians",
+    "subject": "Applied Physics",
+    "category": "Technical Training",
+    "level": "Foundation",
+    "tutorId": 102,
+    "tutorName": "Ms. B. Chukwu — Diagnostic Science Specialist",
+    "price": 8500,
+    "schedule": "Tue & Thu — 5pm - 7pm",
+    "short": "Bridges the gap between physical science principles and real-world health applications.",
+    "impactFocus": "Enhances diagnostic accuracy and problem-solving capacity among health technicians.",
+    "classroomUrl": "https://example.com/classroom/applied-physics"
+  },
+  {
+    "id": 3,
+    "title": "Educational Leadership & Communication Workshop",
+    "subject": "Education & Management",
+    "category": "Leadership Series",
+    "level": "Advanced",
+    "tutorId": 103,
+    "tutorName": "Mrs. C. Nwoye — Educational Consultant",
+    "price": 9000,
+    "schedule": "Sat — 9am - 12pm",
+    "short": "Train to become a confident communicator and facilitator in academic and community contexts.",
+    "impactFocus": "Equips educators with the mindset and strategies for leadership, mentorship, and sustained learner engagement.",
+    "classroomUrl": "https://example.com/classroom/leadership-workshop"
+  },
+  {
+    "id": 4,
+    "title": "Community Mobilization & Behavior Change",
+    "subject": "Social Mobilization",
+    "category": "Field Practice",
+    "level": "Intermediate",
+    "tutorId": 104,
+    "tutorName": "Dr. D. Balogun — Social Impact Consultant",
+    "price": 8800,
+    "schedule": "Fri — 3pm - 6pm",
+    "short": "Learn practical frameworks for mobilizing communities and promoting health behavior change.",
+    "impactFocus": "Prepares community agents for real-world interventions and participatory communication programs.",
+    "classroomUrl": "https://example.com/classroom/community-mobilization"
+  },
+  {
+    "id": 5,
+    "title": "Effective Data Collection & Field Reporting",
+    "subject": "Monitoring & Evaluation",
+    "category": "Data Management",
+    "level": "Foundation",
+    "tutorId": 105,
+    "tutorName": "Mr. K. Musa — M&E Analyst",
+    "price": 8200,
+    "schedule": "Wed & Fri — 2pm - 4pm",
+    "short": "Gain hands-on experience in structured data collection, verification, and reporting for health projects.",
+    "impactFocus": "Improves accuracy and credibility of field reports through data-driven decision making.",
+    "classroomUrl": "https://example.com/classroom/data-collection"
+  }
+]
