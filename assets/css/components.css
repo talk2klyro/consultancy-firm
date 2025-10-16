@@ -143,6 +143,36 @@
   font-weight: 700;
 }
 
+.thankyou-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.thankyou-card {
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+}
+
+.icon.success {
+  font-size: 3rem;
+  color: var(--success);
+  margin-bottom: 1rem;
+}
+
+.class-details {
+  margin-top: 1.5rem;
+  text-align: left;
+  background: var(--bg-light);
+  border-radius: var(--radius);
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
 /* --- CTA (Call to Action) ROW --- */
 .cta-row {
   background: linear-gradient(135deg, var(--emerald), var(--teal));
