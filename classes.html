@@ -1,0 +1,93 @@
+<!<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Explore EduBridge Consultancy’s professional programs in Health Education, Community Mobilization, and Diagnosis." />
+  <meta name="theme-color" content="#0A6E50" />
+  <title>Programs & Training — EduBridge Consultancy</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Script -->
+  <script type="module" src="assets/js/classes.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EduBridge Consultancy</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="classes.html" class="active">Programs</a>
+        <a href="tutors.html">Consultants</a>
+        <a href="enroll.html">Join / Partner</a>
+        <a href="contact.html">Contact</a>
+        <button id="toggle-dark" class="btn btn-secondary" title="Toggle dark mode">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- PAGE HEADING -->
+    <section class="page-head">
+      <h1>Professional Programs & Training Modules</h1>
+      <p>
+        Discover structured programs that build capacity in <strong>health education</strong>, <strong>community mobilization</strong>, and <strong>diagnostic insight</strong>.  
+        Each course is designed to help you grow as a professional — and as a change agent within your community.
+      </p>
+    </section>
+
+    <!-- SEARCH / FILTER -->
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search programs, topics, or consultants..." aria-label="Search programs">
+      <select id="category-filter" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        <option value="health-education">Health Education</option>
+        <option value="community-mobilization">Community Mobilization</option>
+        <option value="community-diagnosis">Community Diagnosis</option>
+      </select>
+    </section>
+
+    <!-- PROGRAM LIST -->
+    <section aria-label="Available Programs">
+      <div id="classes-grid" class="classes-grid" role="list">
+        <p>Loading programs... Please wait.</p>
+      </div>
+    </section>
+
+    <!-- VALUE STATEMENT -->
+    <section class="brand-promise" aria-label="Why Choose Us">
+      <blockquote>
+        “Every program we design is built on empathy, research, and real-world insight.  
+        Our mission is not just to inform — it’s to transform professionals into community catalysts.”
+      </blockquote>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Enroll today or connect with our team to design a custom capacity-building plan for your organization.</p>
+      <div class="cta-row">
+        <a href="enroll.html" class="btn btn-primary">Enroll in a Program</a>
+        <a href="contact.html" class="btn btn-outline">Request Consultancy</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> EduBridge Consultancy. Empowering Health Systems. Enabling Human Potential.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('toggle-dark').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
