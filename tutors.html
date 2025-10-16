@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Meet EduBridge Consultancy’s network of certified consultants and facilitators driving transformation in health education and community development." />
+  <meta name="theme-color" content="#0A6E50" />
+  <title>Our Consultants — EduBridge Consultancy</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- JS -->
+  <script type="module" src="assets/js/tutors.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">EduBridge Consultancy</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Programs</a>
+        <a href="tutors.html" class="active">Consultants</a>
+        <a href="enroll.html">Join / Partner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO SECTION -->
+    <section class="page-head">
+      <h1>Meet Our Consultants & Facilitators</h1>
+      <p>
+        The EduBridge network unites health professionals, trainers, and mobilization experts who translate <strong>research into impact</strong>.  
+        Every consultant here represents our shared commitment to <strong>insight, empowerment, and transformation</strong>.
+      </p>
+    </section>
+
+    <!-- FILTER / SEARCH -->
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search consultants, fields, or expertise..." aria-label="Search consultants">
+      <select id="expertise-filter" aria-label="Filter by field">
+        <option value="">All Fields</option>
+        <option value="health-education">Health Education</option>
+        <option value="community-mobilization">Community Mobilization</option>
+        <option value="community-diagnosis">Community Diagnosis</option>
+      </select>
+    </section>
+
+    <!-- CONSULTANT GRID -->
+    <section aria-label="Consultants Directory">
+      <div id="tutors-grid" class="tutors-grid" role="list">
+        <p>Loading consultants... Please wait.</p>
+      </div>
+    </section>
+
+    <!-- IMPACT QUOTE -->
+    <section class="brand-promise">
+      <blockquote>
+        “We are not tutors — we are catalysts.  
+        Every interaction we lead is designed to help others see further, think deeper, and act with precision.”
+      </blockquote>
+    </section>
+
+    <!-- TESTIMONIALS / SOCIAL PROOF -->
+    <section class="testimonials">
+      <h2>Trusted by Institutions and Learners</h2>
+      <div class="testimonial-cards">
+        <article class="testimonial">
+          <p>“EduBridge consultants reshaped how our local mobilization teams engage communities. It’s not just training — it’s transformation.”</p>
+          <cite>– Dr. K. Okafor, Community Health Officer</cite>
+        </article>
+        <article class="testimonial">
+          <p>“Their facilitators combine global best practices with cultural understanding. Every session feels relevant and empowering.”</p>
+          <cite>– Nnenna I., Public Health Educator</cite>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <h2>Join Our Professional Network</h2>
+      <p>Are you a certified trainer, mobilization specialist, or public health educator?  
+      Partner with us to lead sessions that empower communities nationwide.</p>
+      <a href="enroll.html" class="btn btn-primary">Become a Consultant</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> EduBridge Consultancy. Guiding Insight. Building Capacity. Changing Lives.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+                                                          </html>
